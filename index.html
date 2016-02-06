@@ -30,11 +30,11 @@
           background: -moz-linear-gradient(to bottom right, rgba(20, 0, 50, .75), rgba(50, 0, 20, .75));
       background: -web-kit-linear-gradient(to bottom right, rgba(20, 0, 50, .75), rgba(50, 0, 20, .75));
                background: linear-gradient(to bottom right, rgba(20, 0, 50, .75), rgba(50, 0, 20, .75));
-      -ms-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .85);
-       -o-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .85);
-     -moz-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .85);
-  -webkit-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .85);
-          box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .85);
+      -ms-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
+       -o-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
+     -moz-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
+          box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
     }
     h1 {
       position: fixed;
@@ -69,7 +69,11 @@
       }
     @media screen and (max-width: 40em) {
       body {
-        font-size: .75em;
+        font-size: .6em;
+      }
+    @media screen and (max-width: 20em) {
+      body {
+        font-size: .45em;
       }
     }
   </style>
