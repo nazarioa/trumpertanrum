@@ -15,8 +15,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-color: #000;
-  color: #fff;
-  font-size: 2em;
   padding: 1em;
 }
 
@@ -38,10 +36,11 @@ main {
   box-shadow: inset 0 -12em 64em rgba(0, 0, 0, .5);
 }
 
-h1 {
+/*h1 {
   position: fixed;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
+  font-size: 2em;
   font-weight: 800;
   line-height: 1em;
   letter-spacing: .125em;
@@ -53,6 +52,35 @@ h1 {
   left: 50%;
   transform: translatex(-50%);
   top: 40%;
+}*/
+
+.twitter-timeline {
+  color: #424242;
+}
+
+.tweet-box {
+  width: 100%;
+  max-width: 510px;
+  min-height: 320px;
+  position: fixed;
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: .25em;
+  padding: 1em;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 10%;
+  bottom: 10%;
+}
+
+.baby-trump {
+  width: 143px;
+  height: 195px;
+  position: absolute;
+  bottom: -1em;
+  right: -3em;
 }
 
 .transition {
@@ -63,33 +91,47 @@ h1 {
   transition: all .25s ease 0s;
 }
 @media screen and (max-width: 72em) {
-  body {
+  h1 {
     font-size: 1.5em;
   }
 }
 @media screen and (max-width: 52em) {
-  body {
+  h1 {
     font-size: 1em;
+  }
+  .tweet-box {
+    top: 5%;
+    bottom: 5%;
   }
 }
 @media screen and (max-width: 40em) {
-  body {
+  h1 {
     font-size: .6em;
+  }
+  .tweet-box {
+    top: 0%;
+    bottom: 0%;
   }
 }
 @media screen and (max-width: 20em) {
-  body {
+  h1 {
     font-size: .45em;
+  }
+  .tweet-box {
+    border-radius: 0;
   }
 }
 </style>
 <body>
   <main>
-    <h1 class="transition">under construmption</h1>
+    <!-- <h1 class="transition">under construmption</h1> -->
+    <section class="tweet-box">
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/Trumpertantrum" data-widget-id="695886986171719680" data-chrome="nofooter noborders transparent">#Trumpertantrum Tweets</a>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
+      <img class="baby-trump" src="baby-trump.png" alt="Baby Trump">
+    </section>
   </main>
-
-  <section>
-    <a class="twitter-timeline" href="https://twitter.com/hashtag/Trumpertantrum" data-widget-id="695886986171719680" data-chrome="nofooter noborders transparent">#Trumpertantrum Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </section>
 </body>
 </html>
